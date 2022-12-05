@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private float speed = 100f;
-    private float turnSpeed = 100f;
+    private float speedcam = 5f;
+    private float turnSpeed = 50f;
     private float horizontalInput;
 
     void Update()
     {
-
         horizontalInput = Input.GetAxis("Mouse X");
-        transform.Rotate(Vector3.up * speed * Time.deltaTime * horizontalInput);
+        transform.Rotate(Vector3.up * speedcam * horizontalInput);
     }
 }
