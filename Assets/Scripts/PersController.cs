@@ -23,5 +23,9 @@ public class PersController : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        if (other.gameObject.name.Contains("enemy"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
