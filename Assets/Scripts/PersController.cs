@@ -9,6 +9,7 @@ public class PersController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     public GameObject projectailePrefab;
+    public int starCounter;
 
     void Update()
     {
@@ -22,10 +23,18 @@ public class PersController : MonoBehaviour
         if (other.gameObject.name.Contains("estrella"))
         {
             Destroy(other.gameObject);
+            starCounter++;
+            Debug.Log(message: $"Has conseguido {starCounter} estrellas");
+            
         }
         if (other.gameObject.name.Contains("enemy"))
         {
             Destroy(gameObject);
+            Debug.Log(message: $"HAS PERDIDO!!");
+        }
+        if (starCounter == 50)
+        {
+            Debug.Log(message: $"HAS GANADO!!");
         }
     }
 }

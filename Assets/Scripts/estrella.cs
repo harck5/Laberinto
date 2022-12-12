@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class estrella : MonoBehaviour
 {
-    private float speed = 50;
+    private float speed = 100;
     void Update()
     {
         transform.Rotate(Vector3.forward * speed * Time.deltaTime);

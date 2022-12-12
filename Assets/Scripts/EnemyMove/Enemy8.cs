@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMove : MonoBehaviour
+public class Enemy8 : MonoBehaviour
 {
     private float speed = 10f;
     private float turnSpeed = 40f;
-    private float up = 47f;
-    private float down = 5f;
+    private float up = -10f;
+    private float down = -32f;
     private Vector3 palante = Vector3.forward;
-    private Vector3 rota = new Vector3 (0, 180, 0);
+    private Vector3 rota = new Vector3(0, 180, 0);
     void Update()
     {
         transform.Translate(palante * speed * Time.deltaTime);
