@@ -5,7 +5,6 @@ using UnityEngine;
 public class PersController : MonoBehaviour
 {
     private float speed =10f;
-    private float turnSpeed = 40f;
     private float horizontalInput;
     private float verticalInput;
     public GameObject projectailePrefab;

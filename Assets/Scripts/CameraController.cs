@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     private float speedcam = 5f;
-    private float turnSpeed = 50f;
+    private float turnSpeed = 30f;
     private float horizontalInput;
 
     void Update()
