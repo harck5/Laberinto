@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class estrella : MonoBehaviour
 {
+    //Mantener una rotacion continua
     private float speed = 100;
     void Update()
     {
